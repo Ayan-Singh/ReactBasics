@@ -4,10 +4,15 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
+  const[count,setCount] = useState(0)
+
+  function increment(){
+    setCount(count+1)
+  }
  
 
   return (
-    <h1>Hi there</h1>
+    <button onClick={increment}>Count : {count}</button>
   )
 }
 
